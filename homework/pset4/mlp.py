@@ -6,8 +6,12 @@ import matplotlib.pyplot as plt
 # general idea of how a neural network proceeds
 # also consult this article https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c
 # Initialize the weights and the bias matrices at random
-# compute the predicated output and then calculate the cost using the predicted output and the classes
+# compute the predicated output and then calculate the cost using the predicted value output and the classes
 # uasing backpropogation
+# at the very first step we compute the gradient of the loss function with respect
+# to the output, which in the case of softmax function is h^ - h, however the input vector is
+# not simply the correct class vector but a one-hot vector, where there is a 1 in the position of the correct class
+# i.e. [0 1 2] will become [[1 0 0], [0 1 0], [0 0 1]]
 class TwoLayerMLP(object):
   """
   A two-layer fully-connected neural network. The net has an input dimension of
