@@ -1,0 +1,15 @@
+# features that can be removed:
+# 1. host_since --> does not significantly affect
+# 2. host_response_time --> will be reflected in the ratings
+# 3. latitude
+# 4. longitude - not sure how to use that right now
+
+
+# feature conversion:
+# 1. host_is_superhost --> 't' = 1, 'f' = 0
+# 2. host_listing_count --> convert to integer
+# 3. host_identity_verified --> 't' = 1, 'f' = 0
+# 4. zipcode - ?
+# 5. is_location_exact --> 't' = 1, 'f' = 0
+# 6. property_type --> ?
+#
